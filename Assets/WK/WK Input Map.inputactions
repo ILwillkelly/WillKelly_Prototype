@@ -1,0 +1,54 @@
+{
+    "name": "WK Input Map",
+    "maps": [
+        {
+            "name": "WK RightHand Locomotion",
+            "id": "15b339e2-6c87-4615-9255-492e90a1e002",
+            "actions": [
+                {
+                    "name": "Teleport Mode Activate",
+                    "type": "Value",
+                    "id": "b8e9ea93-2277-4d4f-94a9-6667c869b6a1",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Teleport Go",
+                    "type": "Button",
+                    "id": "20e436f2-7c45-47f2-8fbd-1e7fc5085dc2",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "19102585-5498-49b6-abf8-fe99649baa11",
+                    "path": "<XRController>{RightHand}/{Primary2DAxis}",
+                    "interactions": "Sector(directions=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Mode Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70a769e7-0642-4a12-b6aa-96321a5369a8",
+                    "path": "<XRController>{RightHand}/{Primary2DAxis}",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Go",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
